@@ -129,6 +129,8 @@ class SimpleTestCase(unittest.TestCase):
         u2.plugin_register('my', _my_plugin, 'pp')
         self.assertEqual(self.d.ext_my(), 'pp')
 
+    def test_something(self):
+        print("hah")
 
 if __name__ == '__main__':
     unittest.main()
